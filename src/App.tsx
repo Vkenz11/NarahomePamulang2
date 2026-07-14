@@ -53,7 +53,11 @@ import {
   BookOpen,
   User,
   Tag,
-  ArrowRight
+  ArrowRight,
+  Share2,
+  Facebook,
+  Linkedin,
+  MessageCircle
 } from "lucide-react";
 import { PROPERTY_CONFIG } from "./config/propertyData";
 
@@ -218,6 +222,7 @@ export default function App() {
   const [hasTriggeredExitIntent, setHasTriggeredExitIntent] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState<any>(null);
   const [copiedAddress, setCopiedAddress] = useState(false);
+  const [activeArticleCategory, setActiveArticleCategory] = useState<string>("Semua");
 
   const handleCopyAddress = () => {
     navigator.clipboard.writeText(PROPERTY_CONFIG.address);
@@ -225,6 +230,25 @@ export default function App() {
     setTimeout(() => {
       setCopiedAddress(false);
     }, 2000);
+  };
+
+  const handleShareArticle = (e: React.MouseEvent, platform: string, article: any) => {
+    e.stopPropagation(); // Prevent opening the article details modal
+    const articleUrl = `${window.location.origin}/#articles?id=${article.id}`;
+    const text = `Baca artikel menarik ini: "${article.title}"\n\nNara Home Pamulang - Cluster Mewah dekat BSD.`;
+    
+    let shareUrl = "";
+    if (platform === "whatsapp") {
+      shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + "\n" + articleUrl)}`;
+    } else if (platform === "facebook") {
+      shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`;
+    } else if (platform === "linkedin") {
+      shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
+    }
+    
+    if (shareUrl) {
+      window.open(shareUrl, "_blank", "noopener,noreferrer");
+    }
   };
 
   // Form states
@@ -2347,7 +2371,7 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
             <span className="text-accent text-xs font-bold uppercase tracking-widest text-center block">Edukasi & Tips Properti</span>
             <h2 className="font-serif text-3xl sm:text-4xl text-slate-900 dark:text-white font-bold leading-tight text-center">
               Informasi Terkini & Tips Memilih Hunian
@@ -2357,69 +2381,131 @@ export default function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {PROPERTY_CONFIG.articles?.map((article: any) => (
-              <div
-                key={article.id}
-                className="bg-cream dark:bg-slate-900 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-800/80 shadow-sm flex flex-col hover:shadow-lg transition-all duration-300 group cursor-pointer"
-                onClick={() => setSelectedArticle(article)}
-              >
-                {/* Article Image */}
-                <div className="h-48 overflow-hidden relative">
-                  <img
-                    src={article.image}
-                    alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded">
-                    {article.readTime}
-                  </div>
-                </div>
-
-                {/* Article Info */}
-                <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                  <div className="space-y-2">
-                    {/* Date and Author */}
-                    <div className="flex items-center space-x-4 text-[10px] text-slate-500 dark:text-gray-400 font-medium">
-                      <span className="flex items-center gap-1">
-                        <User className="h-3 w-3" />
-                        {article.author}
-                      </span>
-                      <span>•</span>
-                      <span>{article.date}</span>
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="font-serif font-bold text-slate-900 dark:text-white text-base sm:text-lg group-hover:text-accent transition-colors leading-snug">
-                      {article.title}
-                    </h3>
-
-                    {/* Summary */}
-                    <p className="text-slate-600 dark:text-gray-350 text-xs font-light leading-relaxed line-clamp-3">
-                      {article.summary}
-                    </p>
-                  </div>
-
-                  {/* Keywords tags & action */}
-                  <div className="space-y-3 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-                    <div className="flex flex-wrap gap-1">
-                      {article.keywords.slice(0, 2).map((kw: string, i: number) => (
-                        <span key={i} className="text-[9px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-gray-400 px-2 py-0.5 rounded flex items-center gap-1">
-                          <Tag className="h-2 w-2 text-accent" />
-                          {kw}
-                        </span>
-                      ))}
-                    </div>
-                    <span className="text-xs font-semibold text-primary dark:text-accent group-hover:underline inline-flex items-center gap-1">
-                      <span>Baca Selengkapnya</span>
-                      <ArrowRight className="h-3 w-3" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Category Filter Tabs */}
+          <div className="flex items-center justify-center mb-10 overflow-x-auto py-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none">
+            <div className="flex space-x-2 md:space-x-3 bg-slate-50 dark:bg-slate-900/50 p-1.5 rounded-full border border-gray-100 dark:border-slate-800/80">
+              {["Semua", "Tips Membeli Rumah", "Investasi Properti", "KPR Syariah"].map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveArticleCategory(cat)}
+                  className={`px-4 py-2 text-xs font-semibold rounded-full transition-all duration-300 whitespace-nowrap ${
+                    activeArticleCategory === cat
+                      ? "bg-primary text-white shadow-md"
+                      : "text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/50 dark:hover:bg-slate-800/50"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
+
+          {/* Articles Grid */}
+          {(!PROPERTY_CONFIG.articles || PROPERTY_CONFIG.articles.filter((article: any) => activeArticleCategory === "Semua" || article.category === activeArticleCategory).length === 0) ? (
+            <div className="text-center py-12">
+              <p className="text-slate-500 dark:text-gray-400 text-sm">Tidak ada artikel dalam kategori ini.</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {PROPERTY_CONFIG.articles
+                ?.filter((article: any) => activeArticleCategory === "Semua" || article.category === activeArticleCategory)
+                .map((article: any) => (
+                  <div
+                    key={article.id}
+                    className="bg-cream dark:bg-slate-900 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-800/80 shadow-sm flex flex-col hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                    onClick={() => setSelectedArticle(article)}
+                  >
+                    {/* Article Image */}
+                    <div className="h-48 overflow-hidden relative">
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded">
+                        {article.readTime}
+                      </div>
+                      {article.category && (
+                        <div className="absolute top-4 right-4 bg-accent text-white text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded">
+                          {article.category}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Article Info */}
+                    <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                      <div className="space-y-2">
+                        {/* Date and Author */}
+                        <div className="flex items-center space-x-4 text-[10px] text-slate-500 dark:text-gray-400 font-medium">
+                          <span className="flex items-center gap-1">
+                            <User className="h-3 w-3" />
+                            {article.author}
+                          </span>
+                          <span>•</span>
+                          <span>{article.date}</span>
+                        </div>
+
+                        {/* Title */}
+                        <h3 className="font-serif font-bold text-slate-900 dark:text-white text-base sm:text-lg group-hover:text-accent transition-colors leading-snug">
+                          {article.title}
+                        </h3>
+
+                        {/* Summary */}
+                        <p className="text-slate-600 dark:text-gray-350 text-xs font-light leading-relaxed line-clamp-3">
+                          {article.summary}
+                        </p>
+                      </div>
+
+                      {/* Keywords tags & action / sharing */}
+                      <div className="space-y-4 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+                        <div className="flex flex-wrap gap-1">
+                          {article.keywords.slice(0, 2).map((kw: string, i: number) => (
+                            <span key={i} className="text-[9px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-gray-400 px-2 py-0.5 rounded flex items-center gap-1">
+                              <Tag className="h-2 w-2 text-accent" />
+                              {kw}
+                            </span>
+                          ))}
+                        </div>
+
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs font-semibold text-primary dark:text-accent group-hover:underline inline-flex items-center gap-1">
+                            <span>Baca Selengkapnya</span>
+                            <ArrowRight className="h-3 w-3" />
+                          </span>
+
+                          {/* Social Sharing Buttons */}
+                          <div className="flex items-center space-x-1.5" onClick={(e) => e.stopPropagation()}>
+                            <span className="text-[10px] text-slate-400 dark:text-gray-500 font-medium mr-0.5">Share:</span>
+                            <button
+                              onClick={(e) => handleShareArticle(e, "whatsapp", article)}
+                              title="Bagikan ke WhatsApp"
+                              className="p-1 rounded-full bg-[#25D366]/10 text-[#25D366] hover:bg-[#25D366]/20 transition-colors"
+                            >
+                              <MessageCircle className="h-3.5 w-3.5" />
+                            </button>
+                            <button
+                              onClick={(e) => handleShareArticle(e, "facebook", article)}
+                              title="Bagikan ke Facebook"
+                              className="p-1 rounded-full bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2]/20 transition-colors"
+                            >
+                              <Facebook className="h-3.5 w-3.5" />
+                            </button>
+                            <button
+                              onClick={(e) => handleShareArticle(e, "linkedin", article)}
+                              title="Bagikan ke LinkedIn"
+                              className="p-1 rounded-full bg-[#0A66C2]/10 text-[#0A66C2] hover:bg-[#0A66C2]/20 transition-colors"
+                            >
+                              <Linkedin className="h-3.5 w-3.5" />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          )}
 
         </div>
       </section>
