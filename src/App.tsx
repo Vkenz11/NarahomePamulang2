@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import {
   Home as HomeIcon,
   MapPin,
@@ -3043,6 +3044,8 @@ export default function App() {
         </div>
       )}
 
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
