@@ -6,9 +6,9 @@
 export const PROPERTY_CONFIG = {
   name: "Nara Home Pamulang",
   tagline: "Hunian Modern di Jantung Pamulang",
-  subtitle: "Rumah 2 Lantai Modern Mulai Rp900 Jutaan dengan Lokasi Strategis di Tangerang Selatan.",
+  subtitle: "Rumah 2 Lantai Modern Mulai Rp800 Jutaan dengan Lokasi Strategis di Tangerang Selatan.",
   developer: "Nara Home Pamulang",
-  launchPrice: "Rp900an Juta*",
+  launchPrice: "Rp800an Juta*",
   whatsappNumber: "+62 813-2000-2523", // Change this to your real WhatsApp number
   whatsappMessage: "Halo Nara Home, saya tertarik untuk bertanya tentang unit dan booking site visit.",
   email: "narahomepamulang@gmail.com",
@@ -61,37 +61,37 @@ export const PROPERTY_CONFIG = {
   highlights: [
     {
       id: "modern-design",
-      title: "Modern Minimalist Design",
-      desc: "Estetika modern dengan fungsionalitas ruang maksimal, sirkulasi udara optimal, dan limpahan cahaya alami.",
+      title: "Desain Modern Minimalis",
+      desc: "Estetika modern dengan fungsionalitas ruang maksimal, sirkulasi udara optimal, dan sirkulasi cahaya alami melimpah.",
       icon: "Home"
     },
     {
       id: "strategic-location",
-      title: "Strategic Location",
-      desc: "Hanya menit dari gerbang tol BSD/Pamulang, stasiun KRL, pusat belanja, dan fasilitas kesehatan terbaik.",
+      title: "Lokasi Strategis",
+      desc: "Hanya beberapa menit dari gerbang tol BSD/Pamulang, stasiun KRL, pusat belanja, dan fasilitas kesehatan terbaik.",
       icon: "MapPin"
     },
     {
       id: "family-friendly",
-      title: "Family Friendly",
+      title: "Ramah Keluarga",
       desc: "Lingkungan tenang dengan taman bermain ramah anak dan keamanan 24 jam untuk tumbuh kembang buah hati.",
       icon: "Users"
     },
     {
       id: "investment-potential",
-      title: "High Investment Potential",
+      title: "Potensi Investasi Tinggi",
       desc: "Pamulang adalah kawasan penyangga Jakarta dengan laju pertumbuhan nilai properti hingga 15% per tahun.",
       icon: "TrendingUp"
     },
     {
       id: "quality-construction",
-      title: "Premium Construction",
+      title: "Konstruksi Premium",
       desc: "Material pilihan terbaik mulai dari pondasi cakar ayam, dinding bata kokoh, hingga finishing homogeneous tile.",
       icon: "ShieldCheck"
     },
     {
       id: "growing-neighborhood",
-      title: "Growing Neighborhood",
+      title: "Kawasan Berkembang",
       desc: "Dikelilingi oleh pusat pendidikan ternama seperti Universitas Pamulang serta beragam area komersial aktif.",
       icon: "Sparkles"
     }
@@ -130,21 +130,21 @@ export const PROPERTY_CONFIG = {
     { id: "unit-A-05", number: "A-05", status: "Coming Soon", isReady: false, price: "Rp1.04 Miliar*", specs: { land: 69, building: 74 } },
     { id: "unit-A-06", number: "A-06", status: "Coming Soon", isReady: false, price: "Rp1.01 Miliar*", specs: { land: 67, building: 74 } },
     { id: "unit-A-07", number: "A-07", status: "Coming Soon", isReady: false, price: "Rp1.22 Miliar*", specs: { land: 89, building: 74 } },
-    { id: "unit-B-01", number: "B-01", status: "Coming Soon", isReady: false, price: "Rp900an Juta*", specs: { land: 62, building: 74 } },
-    { id: "unit-B-02", number: "B-02", status: "Coming Soon", isReady: false, price: "Rp900an Juta*", specs: { land: 62, building: 74 } },
-    { id: "unit-B-03", number: "B-03", status: "Coming Soon", isReady: false, price: "Rp900an Juta*", specs: { land: 62, building: 74 } },
+    { id: "unit-B-01", number: "B-01", status: "Coming Soon", isReady: false, price: "Rp800an Juta*", specs: { land: 62, building: 74 } },
+    { id: "unit-B-02", number: "B-02", status: "Coming Soon", isReady: false, price: "Rp800an Juta*", specs: { land: 62, building: 74 } },
+    { id: "unit-B-03", number: "B-03", status: "Coming Soon", isReady: false, price: "Rp800an Juta*", specs: { land: 62, building: 74 } },
     { id: "unit-B-04", number: "B-04", status: "Coming Soon", isReady: false, price: "Rp1.24 Miliar*", specs: { land: 83, building: 89 } },
     { id: "unit-B-05", number: "B-05", status: "Coming Soon", isReady: false, price: "Rp1.29 Miliar*", specs: { land: 96, building: 74 } },
     { id: "unit-B-06", number: "B-06", status: "Coming Soon", isReady: false, price: "Rp1.16 Miliar*", specs: { land: 83, building: 74 } },
-    { id: "unit-B-07", number: "B-07", status: "Coming Soon", isReady: false, price: "Rp900an Juta*", specs: { land: 62, building: 68 } },
-    { id: "unit-C-01", number: "C-01", status: "Available", isReady: true, price: "Rp900an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
-    { id: "unit-C-02", number: "C-02", status: "Available", isReady: true, price: "Rp900an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
-    { id: "unit-C-03", number: "C-03", status: "Available", isReady: true, price: "Rp900an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
-    { id: "unit-C-04", number: "C-04", status: "Available", isReady: true, price: "Rp900an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
-    { id: "unit-C-05", number: "C-05", status: "Available", isReady: true, price: "Rp900an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
-    { id: "unit-C-06", number: "C-06", status: "Available", isReady: true, price: "Rp900an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
+    { id: "unit-B-07", number: "B-07", status: "Coming Soon", isReady: false, price: "Rp800an Juta*", specs: { land: 62, building: 68 } },
+    { id: "unit-C-01", number: "C-01", status: "Available", isReady: true, price: "Rp800an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
+    { id: "unit-C-02", number: "C-02", status: "Available", isReady: true, price: "Rp800an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
+    { id: "unit-C-03", number: "C-03", status: "Available", isReady: true, price: "Rp800an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
+    { id: "unit-C-04", number: "C-04", status: "Available", isReady: true, price: "Rp800an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
+    { id: "unit-C-05", number: "C-05", status: "Available", isReady: true, price: "Rp800an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
+    { id: "unit-C-06", number: "C-06", status: "Available", isReady: true, price: "Rp800an Juta*", specs: { land: 60, building: 74 }, image: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0005.webp", imageLantai2: "/assets/images/1 PDF 3D DENAH - PROJECT CLUSTER - PAMULANG, TANGERANG SELATAN - BAPAK RAMLI_page-0006.webp" },
     { id: "unit-C-07", number: "C-07", status: "Coming Soon", isReady: false, price: "Rp1.15 Miliar*", specs: { land: 72, building: 89 } },
-    { id: "unit-C-08", number: "C-08", status: "Coming Soon", isReady: false, price: "Rp900an Juta*", specs: { land: 60, building: 70 } }
+    { id: "unit-C-08", number: "C-08", status: "Coming Soon", isReady: false, price: "Rp800an Juta*", specs: { land: 60, building: 70 } }
   ],
 
   gallery: [
@@ -241,7 +241,7 @@ export const PROPERTY_CONFIG = {
   // Nearby landmarks & travel times
   nearbyFacilities: [
     {
-      category: "Education",
+      category: "Pendidikan",
       icon: "GraduationCap",
       places: [
         { name: "SD/SMP/SMA Mumtaza Islamic", time: "2 Menit (Satu Area Jl. Kalimantan)" },
@@ -251,7 +251,7 @@ export const PROPERTY_CONFIG = {
       ]
     },
     {
-      category: "Healthcare",
+      category: "Kesehatan",
       icon: "HeartPulse",
       places: [
         { name: "RSUD Tangerang Selatan", time: "3 Menit (Jl. Pajajaran)" },
@@ -261,7 +261,7 @@ export const PROPERTY_CONFIG = {
       ]
     },
     {
-      category: "Shopping",
+      category: "Pusat Belanja",
       icon: "ShoppingBag",
       places: [
         { name: "Superindo Pamulang", time: "4 Menit" },
@@ -271,7 +271,7 @@ export const PROPERTY_CONFIG = {
       ]
     },
     {
-      category: "Transportation",
+      category: "Transportasi",
       icon: "Car",
       places: [
         { name: "Gerbang Tol Pamulang (Cinere-Serpong)", time: "8 Menit" },
@@ -281,7 +281,7 @@ export const PROPERTY_CONFIG = {
       ]
     },
     {
-      category: "Public & Leisure",
+      category: "Fasilitas Publik",
       icon: "Compass",
       places: [
         { name: "Masjid Agung Pamulang", time: "6 Menit" },
