@@ -495,6 +495,74 @@ export const PROPERTY_CONFIG = {
           Jangan lewatkan kesempatan langka memiliki hunian strategis di cluster murah dekat BSD ini. Hubungi tim marketing kami sekarang dan jadwalkan kunjungan show unit Anda sebelum kehabisan unit promonya!
         </p>
       `
+    },
+    {
+      id: "investasi-rumah-dekat-stasiun-sudimara-pamulang",
+      slug: "investasi-rumah-dekat-stasiun-sudimara-pamulang",
+      title: "Investasi Cerdas: Keuntungan Finansial Membeli Rumah Dekat Stasiun Sudimara",
+      summary: "Memilih rumah dekat Stasiun Sudimara seperti Nara Home Pamulang bukan cuma soal kemudahan transportasi, tapi juga tentang percepatan nilai investasi aset Anda di Tangerang Selatan.",
+      date: "12 Juli 2026",
+      author: "Fintech & Property Expert",
+      readTime: "6 Menit Read",
+      keywords: ["Rumah dekat Stasiun Sudimara", "Rumah dijual di Pamulang", "Investasi Properti Tangerang Selatan", "Stasiun Sudimara KRL"],
+      image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+      content: `
+        <p class="lead font-medium text-slate-800 dark:text-gray-200 text-base mb-4">
+          Bagi masyarakat urban modern, waktu adalah aset yang paling berharga. Menghabiskan waktu berjam-jam terjebak kemacetan di jalan raya menuju tempat kerja tidak hanya menguras tenaga, tetapi juga menurunkan produktivitas. Itulah mengapa memiliki <strong>rumah dekat Stasiun Sudimara</strong> menjadi impian yang sangat logis dan menguntungkan.
+        </p>
+        <p class="mb-4">
+          Stasiun Sudimara merupakan salah satu stasiun KRL terpadat dan paling strategis di Tangerang Selatan yang melayani rute langsung (Direct Line) Tanah Abang, Palmerah, Sudirman, hingga Bekasi. Mari kita bahas keuntungan finansial dan kenyamanan hidup dari investasi properti di dekat stasiun ini:
+        </p>
+        <h3 class="font-serif font-bold text-lg text-slate-900 dark:text-white mt-6 mb-2">1. Lonjakan Capital Gain yang Tinggi</h3>
+        <p class="mb-4">
+          Properti yang berlokasi dalam radius 10-15 menit dari stasiun kereta api utama terbukti mengalami kenaikan harga tahunan (capital gain) yang jauh lebih cepat dibandingkan dengan area terpencil. <strong>Nara Home Pamulang</strong> yang berjarak sekitar 12 menit saja dari Stasiun Sudimara menawarkan potensi pertumbuhan nilai investasi hingga 15% per tahun. Ini menjadikannya aset liquid yang sangat bernilai tinggi.
+        </p>
+        <h3 class="font-serif font-bold text-lg text-slate-900 dark:text-white mt-6 mb-2">2. Penghematan Biaya Transportasi Bulanan</h3>
+        <p class="mb-4">
+          Dengan beralih menggunakan KRL Commuter Line dari Stasiun Sudimara, Anda dapat memangkas pengeluaran bensin, tol harian, biaya parkir perkantoran, hingga biaya perawatan kendaraan pribadi secara drastis. Rata-rata keluarga komuter mampu menghemat Rp1,5 juta hingga Rp3 juta per bulan yang dapat dialokasikan langsung untuk cicilan flat KPR Syariah di Nara Home Pamulang.
+        </p>
+        <h3 class="font-serif font-bold text-lg text-slate-900 dark:text-white mt-6 mb-2">3. Hunian Nyaman dan Asri Sepulang Kerja</h3>
+        <p class="mb-4">
+          Meskipun dekat dengan stasiun kereta aktif, Nara Home Pamulang didesain sebagai cluster eksklusif satu pintu (One Gate System) yang tenang, aman, dan bebas dari kebisingan jalan raya utama. Suasana sejuk dengan sirkulasi udara optimal menyambut Anda seketika setelah pulang berkomuter dari pusat bisnis Jakarta yang padat.
+        </p>
+        <p class="mt-6 font-semibold text-primary dark:text-accent">
+          Ingin merasakan kemudahan commuting harian sekaligus mengamankan aset investasi masa depan Anda? Hubungi marketing Nara Home Pamulang sekarang untuk survey lokasi show unit kami.
+        </p>
+      `
+    },
+    {
+      id: "perbandingan-cluster-murah-di-bsd-vs-pamulang",
+      slug: "perbandingan-cluster-murah-di-bsd-vs-pamulang",
+      title: "Perbandingan Harga Rumah: Cluster Murah di BSD vs Nara Home Pamulang",
+      summary: "Ingin menikmati fasilitas modern kelas dunia ala BSD City tapi terkendala harga yang melangit? Cari tahu perbandingan riil harga cluster murah di BSD dengan alternatif terbaiknya di Pamulang.",
+      date: "08 Juli 2026",
+      author: "Analisis Pasar Properti Tangsel",
+      readTime: "5 Menit Read",
+      keywords: ["Cluster murah di BSD", "Rumah murah dekat BSD", "Harga Rumah Pamulang", "Nara Home Pamulang"],
+      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80",
+      content: `
+        <p class="lead font-medium text-slate-800 dark:text-gray-200 text-base mb-4">
+          Siapa yang tidak tergiur dengan kemegahan BSD City? Pusat bisnis modern, pusat hiburan AEON Mall, The Breeze, ICE BSD, hingga jajaran sekolah internasional ada di sana. Namun, saat kita berbicara mengenai anggaran pembelian hunian, kenyataan sering kali memaksa kita berpikir realistis. Mencari <strong>cluster murah di BSD</strong> yang berkualitas kini hampir terasa mustahil bagi budget di bawah 1 Miliar Rupiah.
+        </p>
+        <p class="mb-4">
+          Melalui artikel ini, kita akan membandingkan secara objektif antara realita harga hunian di kawasan inti BSD dengan alternatif cerdas terdekatnya, yaitu <strong>Nara Home Pamulang</strong> yang berlokasi strategis hanya beberapa menit dari gerbang perbatasan BSD.
+        </p>
+        <h3 class="font-serif font-bold text-lg text-slate-900 dark:text-white mt-6 mb-2">1. Realita Harga Cluster di BSD Saat Ini</h3>
+        <p class="mb-4">
+          Saat ini, harga unit rumah baru 2 lantai dengan luas tanah minimal di kawasan BSD City telah menyentuh angka Rp1,6 Miliar hingga Rp2,5 Miliar. Bagi kebanyakan pasangan muda yang baru merintis karier, nominal tersebut membutuhkan angsuran bulanan KPR yang sangat berat dan mengancam stabilitas keuangan keluarga harian.
+        </p>
+        <h3 class="font-serif font-bold text-lg text-slate-900 dark:text-white mt-6 mb-2">2. Nara Home Pamulang: Solusi Cerdas Proksimitas BSD</h3>
+        <p class="mb-4">
+          Bagi Anda yang bertekad mencari <strong>cluster murah dekat BSD</strong>, Nara Home Pamulang adalah jawaban paling presisi. Ditawarkan mulai dari harga Rp800 Jutaan saja, Anda mendapatkan spesifikasi premium (2 lantai, 3 kamar tidur, 2 toilet, dinding bata merah kokoh) dengan lokasi super strategis. Anda hanya membutuhkan waktu sekitar 15 menit saja berkendara untuk menikmati segala kemewahan infrastruktur komersial BSD City.
+        </p>
+        <h3 class="font-serif font-bold text-lg text-slate-900 dark:text-white mt-6 mb-2">3. Efisiensi Biaya dan Promo Pembelian</h3>
+        <p class="mb-4">
+          Dengan selisih harga mencapai Rp800 Juta lebih ekonomis daripada unit di dalam BSD, Anda mendapatkan keringanan cicilan bulanan yang signifikan. Ditambah lagi, Nara Home Pamulang menawarkan promo fantastis khusus bulan Juli 2026: <strong>Cuma 5 Juta Langsung Akad</strong>, tanpa perlu mencemaskan biaya BPHTB, AJB, hingga KPR yang semuanya sudah disubsidi gratis oleh developer.
+        </p>
+        <p class="mt-6 font-semibold text-primary dark:text-accent">
+          Mengapa harus memaksakan diri mencicil rumah miliaran rupiah jika Anda bisa mendapatkan kemewahan dan fungsi yang setara di perbatasan BSD dengan harga setengahnya? Hubungi kami sekarang dan amankan salah satu dari 22 unit eksklusif Nara Home Pamulang!
+        </p>
+      `
     }
   ]
 };
