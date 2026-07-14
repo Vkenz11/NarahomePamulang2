@@ -1,0 +1,17 @@
+{
+  "short_name": "Nara Home",
+  "name": "Nara Home Pamulang",
+  "description": "Premium Modern Residential Cluster in Tangerang Selatan",
+  "icons": [
+    {
+      "src": "/src/assets/images/nara_exterior_hero_1783879429976.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FAF7F2",
+  "theme_color": "#2D4A3E",
+  "display": "standalone",
+  "orientation": "portrait"
+}
