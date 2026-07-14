@@ -297,12 +297,10 @@ export const PROPERTY_CONFIG = {
     { name: "One Gate Community", desc: "Akses tunggal terkontrol untuk privasi & rasa aman keluarga.", icon: "Lock" },
     { name: "24/7 Security", desc: "Petugas keamanan terlatih bersertifikasi berjaga nonstop.", icon: "Shield" },
     { name: "Children's Playground", desc: "Taman hijau interaktif yang ramah & aman bagi tumbuh kembang anak.", icon: "Smile" },
-    { name: "Wide Paved Roads", desc: "Jalan utama cluster lebar 7-8 meter dilapisi paving block premium.", icon: "Milestone" },
+    { name: "6-Meter Wide Paved Roads", desc: "Jalan utama cluster lebar 6 meter dilapisi paving block premium.", icon: "Milestone" },
     { name: "CCTV Monitoring", desc: "Pengawasan kamera keamanan di seluruh titik strategis cluster.", icon: "Video" },
-    { name: "Green Open Space", desc: "Taman terbuka dengan pohon tropis rindang yang asri dan menyejukkan.", icon: "Trees" },
     { name: "Underground Utilities", desc: "Instalasi kabel listrik bawah tanah bebas kusut & rapi secara estetika.", icon: "Zap" },
     { name: "Mosque Nearby", desc: "Masjid komplek yang bersih dan nyaman berjarak berjalan kaki singkat.", icon: "Moon" },
-    { name: "Sport & Basketball Court", desc: "Fasilitas olahraga mini untuk menjaga kebugaran warga.", icon: "Dribbble" },
     { name: "Smart Key Door Lock", desc: "Keamanan modern pintu utama berbasis kartu pintar dan kode PIN.", icon: "Key" }
   ],
 
