@@ -572,3 +572,92 @@ export const PROPERTY_CONFIG = {
     }
   ]
 };
+
+export const SEO_METADATA = {
+  home: {
+    title: "Nara Home Pamulang | Cluster Mewah 2 Lantai Dekat BSD",
+    description: "Cari cluster murah dekat BSD? Nara Home Pamulang menawarkan rumah 2 lantai modern mulai Rp800 Jutaan dengan struktur bata merah, SHM pecah, dan akses tol 8 menit.",
+    keywords: ["Nara Home Pamulang", "cluster murah dekat BSD", "rumah 2 lantai pamulang", "rumah dijual di pamulang", "perumahan baru tangerang selatan"]
+  },
+  why: {
+    title: "Mengapa Nara Home Pamulang | Pilihan Terbaik Keluarga Muda",
+    description: "Keunggulan utama Nara Home Pamulang: Sertifikat SHM pecah per kavling, bebas banjir, dekat Stasiun Sudimara, struktur kokoh bata merah, dan diskon promo fantastis.",
+    keywords: ["keunggulan Nara Home", "investasi properti pamulang", "bata merah tangerang selatan", "rumah bebas banjir pamulang"]
+  },
+  specs: {
+    title: "Spesifikasi Teknis & Denah Ruang Nara Home Pamulang",
+    description: "Intip detail spesifikasi bangunan premium tipe 74/60 di Nara Home Pamulang. Double dinding hebel, finishing homogenous tile, sanitary Toto, dan pondasi cakar ayam.",
+    keywords: ["spesifikasi rumah pamulang", "denah rumah 2 lantai", "material bangunan premium", "homogeneous tile pamulang"]
+  },
+  gallery: {
+    title: "Galeri Show Unit & Kunjungan Lapangan Nara Home Pamulang",
+    description: "Lihat foto asli show unit Nara Home Pamulang. Jelajahi living room megah double height void, kamar tidur nyaman, dan dapur fungsional modern minimalis.",
+    keywords: ["foto show unit pamulang", "interior rumah minimalis", "galeri perumahan tangerang selatan", "show unit mewah"]
+  },
+  location: {
+    title: "Lokasi Strategis & Aksesibilitas Nara Home Pamulang",
+    description: "Alamat Nara Home Pamulang di Benda Baru. Lokasi sangat strategis hanya 8 menit ke Tol Pamulang, 12 menit ke Stasiun KRL Sudimara, dan 5 menit ke UNPAM.",
+    keywords: ["alamat Nara Home Pamulang", "stasiun sudimara ke pamulang", "tol pamulang tangerang selatan", "universitas pamulang"]
+  },
+  faq: {
+    title: "Tanya Jawab (FAQ) Lengkap Seputar Nara Home Pamulang",
+    description: "Pertanyaan seputar skema pembayaran KPR Syariah, legalitas SHM pecah, progress pembangunan, dan jaminan kualitas konstruksi di Nara Home Pamulang.",
+    keywords: ["FAQ Nara Home", "KPR Syariah pamulang", "legalitas rumah tangerang selatan", "proses serah terima kunci"]
+  },
+  articles: {
+    title: "Artikel, Edukasi & Tips Properti Terbaru - Nara Home Pamulang",
+    description: "Dapatkan tips membeli rumah pertama, perbandingan cluster BSD vs Pamulang, dan panduan investasi properti syariah terpercaya dari pakar industri.",
+    keywords: ["tips beli rumah pertama", "investasi properti tangerang selatan", "KPR Syariah", "cluster murah pamulang"]
+  },
+  contact: {
+    title: "Hubungi Kantor Pemasaran Resmi Nara Home Pamulang",
+    description: "Jadwalkan kunjungan show unit gratis atau dapatkan simulasi brosur rincian cicilan KPR Syariah Nara Home Pamulang via chat WhatsApp online nonprofit.",
+    keywords: ["kantor pemasaran Nara Home", "nomor whatsapp marketing pamulang", "booking site visit", "pricelist terbaru Nara Home"]
+  }
+};
+
+export function injectSEOMetadata(sectionKey: string, customData?: { title: string; description: string; keywords?: string[] }) {
+  if (typeof document === "undefined") return;
+
+  const data = customData || SEO_METADATA[sectionKey as keyof typeof SEO_METADATA] || SEO_METADATA.home;
+
+  // Title
+  document.title = data.title;
+
+  // Meta Description
+  let metaDesc = document.querySelector('meta[name="description"]');
+  if (!metaDesc) {
+    metaDesc = document.createElement('meta');
+    metaDesc.setAttribute('name', 'description');
+    document.head.appendChild(metaDesc);
+  }
+  metaDesc.setAttribute('content', data.description);
+
+  // Meta Keywords
+  let metaKeywords = document.querySelector('meta[name="keywords"]');
+  if (!metaKeywords) {
+    metaKeywords = document.createElement('meta');
+    metaKeywords.setAttribute('name', 'keywords');
+    document.head.appendChild(metaKeywords);
+  }
+  const keywordsStr = data.keywords ? data.keywords.join(', ') : "Nara Home Pamulang, perumahan pamulang, cluster dekat BSD";
+  metaKeywords.setAttribute('content', keywordsStr);
+
+  // OpenGraph Tags for social sharing
+  let ogTitle = document.querySelector('meta[property="og:title"]');
+  if (!ogTitle) {
+    ogTitle = document.createElement('meta');
+    ogTitle.setAttribute('property', 'og:title');
+    document.head.appendChild(ogTitle);
+  }
+  ogTitle.setAttribute('content', data.title);
+
+  let ogDesc = document.querySelector('meta[property="og:description"]');
+  if (!ogDesc) {
+    ogDesc = document.createElement('meta');
+    ogDesc.setAttribute('property', 'og:description');
+    document.head.appendChild(ogDesc);
+  }
+  ogDesc.setAttribute('content', data.description);
+}
+
