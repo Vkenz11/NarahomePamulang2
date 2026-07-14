@@ -5,8 +5,6 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from '@vercel/speed-insights/react';
 import {
   Home as HomeIcon,
   MapPin,
@@ -182,7 +180,7 @@ export default function App() {
   const [floorPlanLevel, setFloorPlanLevel] = useState<"1st" | "2nd">("1st");
   const [selectedRoom, setSelectedRoom] = useState<string | null>(null);
   const [activeGalleryTab, setActiveGalleryTab] = useState<string>("all");
-  const [activeNearbyCategory, setActiveNearbyCategory] = useState<string>("Education");
+  const [activeNearbyCategory, setActiveNearbyCategory] = useState<string>(PROPERTY_CONFIG.nearbyFacilities[0]?.category || "Pendidikan");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [floorPlanFormat, setFloorPlanFormat] = useState<"2d" | "3d" | "facade">("2d");
   const [denahPageIndex, setDenahPageIndex] = useState(0);
@@ -666,8 +664,16 @@ export default function App() {
             </h1>
 
             <p className="text-gray-200 text-base sm:text-lg lg:text-xl max-w-2xl font-light leading-relaxed">
-              Rumah 2 Lantai Modern mulai <strong className="text-accent font-semibold">Rp900 Jutaan*</strong> dengan spesifikasi struktur bata merah, keamanan nonstop, dan lokasi premium Tangerang Selatan.
+              Rumah 2 Lantai Modern mulai <strong className="text-accent font-semibold">Rp800 Jutaan*</strong> dengan spesifikasi struktur bata merah, keamanan nonstop, dan lokasi premium Tangerang Selatan.
             </p>
+
+            {/* Promo Hook Banner - July 2026 */}
+            <div className="bg-gradient-to-r from-amber-500/20 to-red-500/20 border border-amber-500/40 backdrop-blur-md rounded-xl p-4 max-w-xl shadow-lg relative overflow-hidden">
+              <span className="text-xs text-accent font-bold uppercase tracking-wider block mb-1">🔥 PROMO TERBATAS BULAN JULI 2026</span>
+              <p className="text-sm text-white font-medium leading-relaxed">
+                Dapatkan diskon up to <strong className="text-accent font-extrabold text-base">200 Juta</strong>, hanya dengan <strong className="text-accent font-extrabold text-base">5 Juta langsung akad</strong> dan unit siap huni!
+              </p>
+            </div>
 
             {/* Auto-cycling Key Selling Points Highlight Section */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-4 max-w-xl overflow-hidden relative shadow-md">
@@ -729,11 +735,11 @@ export default function App() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 max-w-xl">
               <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
                 <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Kamar Tidur</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">3 Bedroom</span>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">3 Kamar Tidur</span>
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
                 <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Kamar Mandi</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">2 Bathroom</span>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">2 Kamar Mandi</span>
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
                 <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Luas Bangunan</span>
@@ -741,7 +747,7 @@ export default function App() {
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
                 <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Harga Perdana</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">Mulai 900an Jt*</span>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">Mulai 800an Jt*</span>
               </div>
             </div>
 
@@ -751,7 +757,7 @@ export default function App() {
                 onClick={() => setShowBookingModal(true)}
                 className="bg-accent hover:bg-accent-dark text-white text-center py-4 px-8 rounded font-semibold text-sm uppercase tracking-widest shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
               >
-                Book Site Visit (Free)
+                Booking Kunjungan (Gratis)
               </button>
               <button
                 onClick={() => triggerWhatsApp()}
@@ -1968,7 +1974,14 @@ export default function App() {
                       <div key={idx} className="flex items-center justify-between border-b border-gray-50 dark:border-slate-900 pb-2.5">
                         <div className="flex items-center space-x-3">
                           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                          <span className="text-xs sm:text-sm font-medium text-slate-800 dark:text-gray-250">{place.name}</span>
+                          <span
+                            className="text-xs sm:text-sm font-medium text-slate-800 dark:text-gray-250"
+                            style={darkMode ? {
+                              color: idx === 0 ? "#ffffff" : idx === 1 ? "#ffffff" : idx === 2 ? "#ffffff" : idx === 3 ? "#ffffff" : undefined
+                            } : undefined}
+                          >
+                            {place.name}
+                          </span>
                         </div>
                         <span className="bg-primary/10 text-primary dark:text-accent text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
                           {place.time}
@@ -2500,7 +2513,7 @@ export default function App() {
                   onClick={() => setShowBookingModal(true)}
                   className="bg-primary hover:bg-primary-dark text-white font-semibold py-3.5 px-6 rounded text-xs uppercase tracking-wider text-center shadow-md transition-colors"
                 >
-                  Jadwalkan Survey Lokasi (Free)
+                  Jadwalkan Survey Lokasi (Gratis)
                 </button>
                 <button
                   onClick={() => triggerWhatsApp("Halo Nara Home Pamulang, saya mau tanya harga ruko / cluster perumahan terupdate.")}
@@ -2811,7 +2824,7 @@ export default function App() {
 
             <div className="mb-6">
               <span className="bg-accent/10 border border-accent/20 text-accent text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded inline-block">
-                Free Site Visit Reservation
+                Reservasi Kunjungan Gratis
               </span>
               <h3 className="font-serif text-2xl font-bold text-slate-900 mt-2">Jadwalkan Kunjungan Show Unit</h3>
               <p className="text-slate-500 text-xs mt-1 leading-relaxed">
@@ -2915,7 +2928,7 @@ export default function App() {
               <div className="bg-white p-4 rounded-xl border border-gray-150 space-y-2 text-xs">
                 <div className="flex items-center space-x-2 text-slate-700">
                   <Check className="h-4 w-4 text-accent" />
-                  <span>Free Kanopi Carport Kaca Tempered</span>
+                  <span>Gratis Kanopi Carport Kaca Tempered</span>
                 </div>
                 <div className="flex items-center space-x-2 text-slate-700">
                   <Check className="h-4 w-4 text-accent" />
@@ -3045,10 +3058,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Vercel Web Analytics */}
-      <Analytics />
-      {/* Vercel Speed Insights */}
-      <SpeedInsights />
     </div>
   );
 }
