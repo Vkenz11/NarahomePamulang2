@@ -881,7 +881,7 @@ export default function App() {
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
                 <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Harga Perdana</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">Mulai 800an Jt*</span>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">Mulai 800 Jutaan*</span>
               </div>
             </div>
 
