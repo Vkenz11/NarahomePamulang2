@@ -866,22 +866,26 @@ export default function App() {
             </div>
 
             {/* Micro Highlights Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 max-w-xl">
-              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
-                <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Kamar Tidur</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">3 Kamar Tidur</span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4 py-4 max-w-2xl">
+              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3.5 sm:p-4 rounded-xl text-left hover:bg-white/15 transition-colors">
+                <span className="text-xs sm:text-sm text-gray-200 uppercase tracking-wider block font-extrabold mb-1">Kamar Tidur</span>
+                <span className="font-serif text-2xl sm:text-3xl font-extrabold text-accent leading-none block">3 KT</span>
+                <span className="text-[11px] text-gray-300 font-medium mt-1 block">3 Kamar Tidur</span>
               </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
-                <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Kamar Mandi</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">2 Kamar Mandi</span>
+              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3.5 sm:p-4 rounded-xl text-left hover:bg-white/15 transition-colors">
+                <span className="text-xs sm:text-sm text-gray-200 uppercase tracking-wider block font-extrabold mb-1">Kamar Mandi</span>
+                <span className="font-serif text-2xl sm:text-3xl font-extrabold text-accent leading-none block">2 KM</span>
+                <span className="text-[11px] text-gray-300 font-medium mt-1 block">2 Toilet Modern</span>
               </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
-                <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Luas Bangunan</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">74 m²</span>
+              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3.5 sm:p-4 rounded-xl text-left hover:bg-white/15 transition-colors">
+                <span className="text-xs sm:text-sm text-gray-200 uppercase tracking-wider block font-extrabold mb-1">Luas Bangunan</span>
+                <span className="font-serif text-2xl sm:text-3xl font-extrabold text-accent leading-none block">74 m²</span>
+                <span className="text-[11px] text-gray-300 font-medium mt-1 block">2 Lantai Megah</span>
               </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3 rounded text-left">
-                <span className="text-[10px] text-gray-300 uppercase tracking-widest block font-bold">Harga Perdana</span>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-accent">Mulai 800 Jutaan*</span>
+              <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3.5 sm:p-4 rounded-xl text-left hover:bg-white/15 transition-colors">
+                <span className="text-xs sm:text-sm text-gray-200 uppercase tracking-wider block font-extrabold mb-1">Harga Perdana</span>
+                <span className="font-serif text-2xl sm:text-3xl font-extrabold text-accent leading-none block">800 Jt-an*</span>
+                <span className="text-[11px] text-gray-300 font-medium mt-1 block">Cicilan Ringan KPR</span>
               </div>
             </div>
 
@@ -1003,10 +1007,10 @@ export default function App() {
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className="lg:col-span-6 space-y-6 text-left lg:pl-6"
             >
-              <div className="inline-block bg-primary/10 border border-primary/20 text-primary dark:text-accent text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+              <div className="inline-block bg-primary/10 dark:bg-primary/20 border border-primary/20 dark:border-accent/30 text-primary dark:text-accent text-xs sm:text-sm md:text-base font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider">
                 Solusi Rumah Impian Anda
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-bold leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
                 Hunian Ideal Bebas Khawatir Untuk Keluarga Muda
               </h2>
               <p className="text-slate-600 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
@@ -1093,8 +1097,8 @@ export default function App() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-center max-w-3xl mx-auto mb-16 space-y-3"
           >
-            <span className="text-accent text-xs font-bold uppercase tracking-widest">Premium Living Standard</span>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-bold leading-tight">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Standar Hunian Premium</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
               Keunggulan Utama Nara Home Pamulang
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm sm:text-base">
@@ -1163,8 +1167,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest">Spesifikasi & Denah Ruang</span>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-bold leading-tight">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Spesifikasi & Denah Ruang</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
               Tipe Eksklusif: 2 Lantai Modern Minimalist
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm sm:text-base">
@@ -1608,8 +1612,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest block">Unit Availability</span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-slate-900 dark:text-white font-bold leading-tight">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Ketersediaan Unit & Kavling</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
               Peta Unit & Status Ketersediaan Kavling
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm sm:text-base">
@@ -1622,11 +1626,12 @@ export default function App() {
             {PROPERTY_CONFIG.units.map((unit) => {
               const statusColors = {
                 Available: { bg: "bg-emerald-50 dark:bg-emerald-950/45 text-emerald-700 dark:text-emerald-400 border-emerald-150 dark:border-emerald-900", text: "Tersedia" },
+                Booked: { bg: "bg-amber-50 dark:bg-amber-950/45 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-900", text: "Booked" },
                 Reserved: { bg: "bg-amber-50 dark:bg-amber-950/45 text-amber-700 dark:text-amber-400 border-amber-150 dark:border-amber-900", text: "Dipesan" },
                 Sold: { bg: "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 border-slate-200 dark:border-slate-700", text: "Terjual" },
                 "Coming Soon": { bg: "bg-blue-50 dark:bg-blue-950/45 text-blue-600 dark:text-blue-400 border-blue-150 dark:border-blue-900", text: "Coming Soon" }
               };
-              const badge = statusColors[unit.status as keyof typeof statusColors];
+              const badge = statusColors[unit.status as keyof typeof statusColors] || statusColors.Available;
 
               return (
                 <div
@@ -1703,11 +1708,12 @@ export default function App() {
                     <span>Spesifikasi Kavling: {selectedUnit.number}</span>
                     <span className={`text-[10px] px-2.5 py-0.5 rounded-full border font-bold uppercase tracking-wider ${
                       selectedUnit.status === "Available" ? "bg-emerald-50 dark:bg-emerald-950/45 text-emerald-700 dark:text-emerald-400 border-emerald-150 dark:border-emerald-900" :
+                      selectedUnit.status === "Booked" ? "bg-amber-50 dark:bg-amber-950/45 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-900" :
                       selectedUnit.status === "Reserved" ? "bg-amber-50 dark:bg-amber-950/45 text-amber-700 dark:text-amber-400 border-amber-150 dark:border-amber-900" :
                       selectedUnit.status === "Coming Soon" ? "bg-blue-50 dark:bg-blue-950/45 text-blue-600 dark:text-blue-400 border-blue-150 dark:border-blue-900" :
                       "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 border-slate-200 dark:border-slate-700"
                     }`}>
-                      {selectedUnit.status === "Available" ? "Tersedia" : selectedUnit.status === "Reserved" ? "Dipesan" : selectedUnit.status === "Coming Soon" ? "Coming Soon" : "Terjual"}
+                      {selectedUnit.status === "Available" ? "Tersedia" : selectedUnit.status === "Booked" ? "Booked" : selectedUnit.status === "Reserved" ? "Dipesan" : selectedUnit.status === "Coming Soon" ? "Coming Soon" : "Terjual"}
                     </span>
                     <span className={`text-[10px] px-2.5 py-0.5 rounded-full border font-bold uppercase tracking-wider ${
                       selectedUnit.isReady 
@@ -1879,8 +1885,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest">Real marketing assets</span>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-bold leading-tight">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Galeri & Visual Show Unit</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
               Galeri Kunjungan Show Unit Nara
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm sm:text-base">
@@ -1975,11 +1981,11 @@ export default function App() {
         </div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 z-10">
-          <div className="inline-block bg-accent/20 border border-accent/30 text-accent text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
-            Video Tour
+          <div className="inline-block bg-accent/20 border border-accent/30 text-accent text-xs sm:text-sm md:text-base font-extrabold px-4.5 py-2 rounded-full uppercase tracking-wider mb-2">
+            Video Virtual Tour
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-3xl mx-auto">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight max-w-4xl mx-auto">
             Rasakan Kemewahan Ruang Secara Virtual Dari Gadget Anda
           </h2>
           
@@ -2026,8 +2032,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest">Konektivitas Strategis</span>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-bold leading-tight">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Konektivitas & Lokasi Strategis</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
               Aksesibilitas Sempurna di Tangerang Selatan
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm sm:text-base">
@@ -2142,8 +2148,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest">Premium Cluster Facilities</span>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-bold leading-tight">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Fasilitas Cluster Premium</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
               Fasilitas Keamanan & Kenyamanan Internal
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm sm:text-base">
@@ -2201,8 +2207,8 @@ export default function App() {
             
             {/* Copy Side Left */}
             <div className="lg:col-span-6 text-left space-y-6">
-              <span className="text-accent text-xs font-bold uppercase tracking-widest block">Tropical Modern Living</span>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+              <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Konsep Hunian Tropis Modern</span>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight">
                 Mulai Babak Baru Kehidupan Bahagia Bersama Keluarga
               </h2>
               <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-light">
@@ -2303,9 +2309,9 @@ export default function App() {
 
             {/* Content Copy Right */}
             <div className="lg:col-span-7 text-left space-y-6">
-              <span className="text-accent text-xs font-bold uppercase tracking-widest block">Pengembang Berkomitmen Tinggi</span>
+              <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Pengembang Berkomitmen Tinggi</span>
               
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-bold leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight">
                 Dipersembahkan Dengan Integritas oleh Nara Home Pamulang
               </h2>
 
@@ -2363,8 +2369,8 @@ export default function App() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest text-center block">Frequently Asked Questions</span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-slate-900 dark:text-white font-bold leading-tight text-center">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest text-center block mb-2">Pertanyaan yang Sering Diajukan</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight text-center">
               Pertanyaan yang Sering Diajukan (FAQ)
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm text-center">
@@ -2427,8 +2433,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest text-center block">Testimonials</span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-slate-900 dark:text-white font-bold leading-tight text-center">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest text-center block mb-2">Ulasan & Testimoni Penghuni</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight text-center">
               Apa Kata Mereka Tentang Nara Home
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm text-center">
@@ -2479,8 +2485,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
           
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span className="text-accent text-xs font-bold uppercase tracking-widest text-center block">Edukasi & Tips Properti</span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-slate-900 dark:text-white font-bold leading-tight text-center">
+            <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest text-center block mb-2">Edukasi & Tips Properti</span>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight text-center">
               Informasi Terkini & Tips Memilih Hunian
             </h2>
             <p className="text-slate-500 dark:text-gray-400 text-sm text-center">
@@ -2630,8 +2636,8 @@ export default function App() {
             {/* Form & Info Left - 6 Columns */}
             <div className="lg:col-span-6 space-y-6 flex flex-col justify-between">
               <div>
-                <span className="text-accent text-xs font-bold uppercase tracking-widest block">Direct Connection</span>
-                <h2 className="font-serif text-3xl sm:text-4xl text-slate-900 dark:text-white font-bold leading-tight mt-2">
+                <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Konsultasi & Kontak Pemasaran</span>
+                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-900 dark:text-white font-extrabold leading-[1.15] tracking-tight mt-2">
                   Hubungi Kantor Pemasaran Resmi Kami
                 </h2>
                 <p className="text-slate-600 dark:text-gray-300 text-sm leading-relaxed font-light mt-3">
@@ -2809,9 +2815,9 @@ export default function App() {
         </div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 z-10">
-          <span className="text-accent text-xs font-bold uppercase tracking-widest block">Limited Units remaining</span>
+          <span className="text-accent text-sm sm:text-base md:text-lg font-black uppercase tracking-widest block mb-2">Unit Terbatas & Promo Eksklusif</span>
           
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight max-w-4xl mx-auto">
             Amankan Kavling Terbaik Anda Sebelum Kehabisan Promo Bulan Ini
           </h2>
 
