@@ -798,7 +798,7 @@ export default function App() {
             </h1>
 
             <p className="text-gray-200 text-base sm:text-lg lg:text-xl max-w-2xl font-light leading-relaxed">
-              Rumah 2 Lantai Modern mulai <strong className="text-accent font-semibold">Rp800 Jutaan*</strong> dengan spesifikasi struktur bata merah, keamanan nonstop, dan lokasi premium Tangerang Selatan.
+              Rumah 2 Lantai Modern mulai <strong className="text-accent font-semibold">Rp900 Jutaan*</strong> dengan spesifikasi struktur bata merah, keamanan nonstop, dan lokasi premium Tangerang Selatan.
             </p>
 
             {/* Promo Hook Banner - July 2026 */}
@@ -884,7 +884,7 @@ export default function App() {
               </div>
               <div className="bg-white/10 backdrop-blur-md border border-white/15 p-3.5 sm:p-4 rounded-xl text-left hover:bg-white/15 transition-colors">
                 <span className="text-xs sm:text-sm text-gray-200 uppercase tracking-wider block font-extrabold mb-1">Harga Perdana</span>
-                <span className="font-serif text-2xl sm:text-3xl font-extrabold text-accent leading-none block">800 Jt-an*</span>
+                <span className="font-serif text-2xl sm:text-3xl font-extrabold text-accent leading-none block">900 Jt-an*</span>
                 <span className="text-[11px] text-gray-300 font-medium mt-1 block">Cicilan Ringan KPR</span>
               </div>
             </div>
