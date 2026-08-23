@@ -803,7 +803,7 @@ export default function App() {
 
             {/* Promo Hook Banner - July 2026 */}
             <div className="bg-gradient-to-r from-amber-500/20 to-red-500/20 border border-amber-500/40 backdrop-blur-md rounded-xl p-4 max-w-xl shadow-lg relative overflow-hidden">
-              <span className="text-xs text-accent font-bold uppercase tracking-wider block mb-1">🔥 PROMO TERBATAS BULAN JULI 2026</span>
+              <span className="text-xs text-accent font-bold uppercase tracking-wider block mb-1">PROMO TERBATAS BULAN JULI 2026</span>
               <p className="text-sm text-white font-medium leading-relaxed">
                 Dapatkan diskon up to <strong className="text-accent font-extrabold text-base">200 Juta</strong>, hanya dengan <strong className="text-accent font-extrabold text-base">5 Juta langsung akad</strong> dan unit siap huni!
               </p>
